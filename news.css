@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+h1 {
+    text-align: center; 
+}
+
+
+header{
+    float: right;
+
+}
+
+@media(max-widh: 670px) {
+    header{
+        float: right;
+    }
+}
+/*カレンダーのレスポンシブ*/
+.iframe-wrap {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    overflow:auto; 
+    -webkit-overflow-scrolling:touch;
+    border:2px solid #ccc; 
+  }
+  .iframe-wrap iframe {
+      position:absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      border:none;
+      display:block;
+  }
