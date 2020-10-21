@@ -1,59 +1,92 @@
 @charset "UTF-8";
 
+*{
+    /*初期設定のmarginを0にする*/
+    margin: 0;
+}
+
 
 
 h1 {
+    /*h1の左を36px間隔を空ける*/
     margin-left: 36px;
+    /*横幅を400pxに設定*/
     width: 400px;
+    /*h1の背景色は黒に指定*/
     background: #000000;
+    /*h1の周りに黒い枠線をいれる*/
     border: 1px solid #000000;
+    /*h1のテキストを真ん中に表示させる*/
     text-align: center;
+    /*テキストの色を白色に指定*/
     color: white; 
 }
 
 
 
 .main-nav {
+    /*要素が柔軟に動けるようにする*/
    display: flex;
+    /*フォントのサイズは12.5pxにする*/
    font-size: 1.25rem;
+    /*要素の上の間隔は34pxとります*/
    margin-top: 34px;
+    /*リストの始めの黒い点は削除しておきます*/
    list-style: none;
    
 }
 
 .main-nav li {
+    /*左側への間隔は36px空けておきます*/
     margin-left: 36px;
+    /*横幅は100pxに設定*/
     width: 100px;
+    /*背景色は黒色に設定*/
     background: #000000;
+    /*要素の周りを1pxの黒い線で囲みます*/
     border: 1px solid #000000;
+    /*要素の中のテキストを真ん中に表示します*/
     text-align: center;
+    /*文字の色は白色に設定します*/
     color: white;
     
 }
 
 .page-header {
+    /*要素を柔軟に動かせる状態にします*/
     display: flex;
+    /*それぞれの要素の間隔を均等に配置します*/
     justify-content: space-between;
+    /*横幅の最大を1100pxに設定*/
     max-width: 1100px;
+    /*上下の間隔は0で、要素を中央に配置します*/
     margin: 0 auto;
+    /*上下の間隔は0で、左右に4％の間隔を空けます*/
     padding: 0 4%;
     
     
 }
 .home-content {
+    /*テキストを真ん中に表示します*/
     text-align: center;
+    /*上側の間隔を10px空けます*/
     margin-top: 10px;
     
     
 }
 .home-content p {
-    font-size: 1.125rem
+    /*文字の大きさを11.25pxに設定*/
+    font-size: 1.125rem;
+    /*上は10px、下は42px、左右は0、にそれぞれ間隔を空けます*/
     margin: 10px 0 42px;  
      
 }
 .big-bg {
+    /*背景を全画面に表示します*/
     background-size: cover;
+    /*背景の表示場所は真ん中の上付近に表示*/
     background-position: center top;
+    /*背景は繰り返し表示させません。1回だけの表示です*/
     background-repeat: no-repeat;
     
 }
@@ -61,24 +94,31 @@ h1 {
 
 
 #home {
+    /*背景画像にurl()内の画像を設定*/
     background-image: url(img.png);
+    /*100%の高さを設定します*/
     min-height: 100vh;
+    /*背景の色はdarkgrayに設定*/
     background-color: darkgray;
+    /*背景の明るさの種類はhard-lightに設定*/
     background-blend-mode: hard-light;
    
 }
 
 body {
+    /*フォントの種類は'Caveat', cursive;に設定*/
     font-family: 'Caveat', cursive;
 }
 
 
 
 a:visited {
+    /*リンクを一度クリックしたあとは、白色でテキストリンクを表示させます*/
     color: white;
  }
 
 a:hover {
+    /*マウスをテキストリンクの上に持って行った時に、赤色に文字色を変更します*/
      color: red;
  }
 
@@ -86,13 +126,17 @@ a:hover {
 
 
 /*パソコン用の画面対応*/
+/*画面幅が650px以上の時にこのCSSを適用します*/
 @media(min-width:650px) {
   h2 {
+      /*フォントのサイズは50pxに設定*/
     font-size: 50px;   
   }
+    /*フォントのサイズは30pxに設定*/
   .pagecontents {
     font-size: 30px;
 }
+    /*この要素は画面上で非表示にさせます*/
   .header-logo-menu{
     display: none;
   }
@@ -107,40 +151,54 @@ a:hover {
 
 
 .home-content {
-    width: 800px%;
+    /*横幅は800pxに設定*/
+    width: 800px;
+    /*背景は黒色に設定*/
     background: #000000;
+    /*1pxで黒色の枠線で、要素の周りを囲むように設定*/
     border: 1px solid #000000;
+    /*テキストを真ん中に表示します*/
     text-align: center;
+    /*文字の色は白色に設定*/
     color: white; 
+    /*フォントの種類はヒラギノ明朝に設定*/
     font-family: "ヒラギノ明朝 ProN","Hiragino Mincho ProN";
     
 }
 
 /*スマホレスポンシブ対応*/
 
-
+/*670px以下の画面では以下のCSSを適用します*/
 @media screen and (max-width: 670px) {
     /* 670px以下に適用されるCSS（スマホ用） */
     .page-header {
+        /*横幅は要素に合わせます*/
        width: auto;
+        /*縦の幅は要素に合わせます*/
        height: auto;
        
     }
     .main-nav {
+        /*この要素を非表示に設定*/
         display: none;
     }
     h1 {
-        height: 80px;
+        /*高さは90pxに設定*/
+        height: 90px;
+        /*h1の上下の間隔は5px、左右の間隔は10pxに設定*/
         padding: 5px 10px;
     }
 　　 h2 {
+       /*フォントサイズは40pxに設定*/
         font-size: 40px;
         
     }
-    .pagecontents {
+    
+    .pagecontents { 
+    /*フォントサイズは　15pxに設定*/
       font-size: 15px;
 
-   
+    }
     
 
       
@@ -151,12 +209,15 @@ a:hover {
 /*ここからハンバーガーメニュー*/
 
 header {
+    /*上下左右の間隔を10px空ける*/
     padding:10px;
+    /*背景の色はdarkgrayに設定*/
     background-color: darkgrey;
   
   }
   
   #nav-drawer {
+      /*要素の位置は周りの要素によって変更されます*/
     position: relative;
    
   }
@@ -168,9 +229,13 @@ header {
   
   /*アイコンのスペース*/
   #nav-open {
+      /**/
     display: inline-block;
+      /**/
     width: 30px;
+      /**/
     height: 22px;
+      /**/
     vertical-align: middle;
   }
   
