@@ -286,8 +286,8 @@ header {
     -webkit-transform: translateX(-105%);
     transform: translateX(-105%);
     color: #000000;
-    font-size: 20px;
-    margin: 20px;
+    font-size: 25px;
+    margin: auto;
     padding-bottom: 20px;
     a:hover {
       color: red;
@@ -328,5 +328,6 @@ header {
     text-align: center;
     color: #000000;
     list-style: none;
+    padding-bottom: 20px;
     
 }
