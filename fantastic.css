@@ -151,8 +151,8 @@ a:hover {
 
 
 .home-content {
-    /*横幅は800pxに設定*/
-    width: 800px;
+    /*横幅は100％に設定*/
+    width: auto;
     /*背景は黒色に設定*/
     background: #000000;
     /*1pxで黒色の枠線で、要素の周りを囲むように設定*/
@@ -212,7 +212,7 @@ header {
     /*上下左右の間隔を10px空ける*/
     padding:10px;
     /*背景の色はdarkgrayに設定*/
-    background-color: darkgrey;
+    background-color: #000000;
   
   }
   
@@ -245,7 +245,7 @@ header {
     height: 3px;/*線の太さ*/
     width: 25px;/*長さ*/
     border-radius: 3px;
-    background: #555;
+    background: white;
     display: block;
     content: '';
     cursor: pointer;
