@@ -180,6 +180,7 @@ a:hover {
        width: auto;
         /*縦の幅は要素に合わせます*/
        height: auto;
+       padding-left: 0;
        
     }
     .main-nav {
@@ -223,6 +224,7 @@ header {
   #nav-drawer {
       /*要素の位置は周りの要素によって変更されます*/
     position: relative;
+    padding: 20px 0 ;
    
   }
   
